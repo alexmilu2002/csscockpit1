@@ -1,0 +1,140 @@
+* { 
+  box-sizing: border-box; 
+}
+
+html, body { 
+  margin: 0; 
+  height: 100%; 
+  background: black; 
+  color: white; 
+ }
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("./images/cockpit.svg");
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+
+main {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* SPACE */
+section {
+  /* inset: 0; */
+  overflow: hidden;
+  height:100%;
+
+  perspective:100em;
+  transform-style:preserve-3d;
+
+  display:grid;
+}
+
+/* STERREN LAAGJES */
+section > div {
+  grid-area:1/1;
+  height:100%;
+
+  background:
+    radial-gradient(2px 2px at 20px 30px, white, transparent),
+    radial-gradient(2px 2px at 80px 120px, white, transparent),
+    radial-gradient(2px 2px at 150px 60px, white, transparent);
+  background-size: 200px 200px;
+  animation: zoom calc(7s * var(--throttle, .9)) linear infinite;
+}
+
+/* DIEPTE */
+section > div:nth-child(2) {
+  animation-delay: -3.17s;
+  animation-duration: calc(3.23s * var(--throttle, .9));
+}
+
+section > div:nth-child(3) {
+
+  animation-delay: -7.79s;
+  animation-duration: calc(5.49s * var(--throttle, .9));
+}
+
+section > div:nth-child(4) {
+
+  animation-delay: -5.79s;
+  animation-duration: calc(7.89s * var(--throttle, .9));
+}
+
+section > div:nth-child(5) {
+
+  animation-delay: -1.79s;
+  animation-duration: calc(9.43s * var(--throttle, .9));
+}
+
+section > div:nth-child(6) {
+
+  animation-delay: -9.79s;
+  animation-duration: calc(11.73s * var(--throttle, .9));
+}
+
+section > div:nth-child(7) {
+
+  animation-delay: -11.39s;
+  animation-duration: calc(13.27s * var(--throttle, .9));
+}
+
+
+@keyframes zoom {
+  from { transform: translateZ(-20em); }
+  to { transform: translateZ(150em); }
+}
+
+/* RONDJE */
+/* main::after {
+  content: "";
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle at 50% 40%, #444, #111 70%);
+  border-radius: 50%;
+} */
+
+/* CONTROL PANEL */
+form {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  z-index: 1;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+input[type=range] {
+  width: 150px;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+
+/* START / STOP */
+body:has(input[type=checkbox]:not(:checked)) section > div {
+  animation-play-state: paused;
+}
+
+/* https://www.google.com/search?q=spaceship+cockpit+transparent+background&sca_esv=d93e5f3f55d68fd9&udm=2&biw=1920&bih=945&sxsrf=ANbL-n51w0qFPlt7sIPtdpcA9HZ8dLoixg%3A1772708805723&ei=xWOpabbzK6KK-d8PtKiYgAk&ved=0ahUKEwj26Z71zoiTAxUiRf4FHTQUBpAQ4dUDCBI&uact=5&oq=spaceship+cockpit+transparent+background&gs_lp=Egtnd3Mtd2l6LWltZyIoc3BhY2VzaGlwIGNvY2twaXQgdHJhbnNwYXJlbnQgYmFja2dyb3VuZEjmElCYBlibEXABeACQAQCYATqgAewCqgEBOLgBA8gBAPgBAZgCAqACMcICBhAAGAcYHsICBRAAGIAEwgIEEAAYHsICBhAAGAgYHsICCBAAGAcYCBgewgIIEAAYBRgHGB6YAwCIBgGSBwEyoAf3BbIHATG4By3CBwUwLjEuMcgHBYAIAA&sclient=gws-wiz-img#sv=CAMSWBoyKhBlLXEzT2paUHFiTEJQZm5NMg5xM09qWlBxYkxCUGZuTToOZWZOVUJEV2RuazZISk0gBCocCgZtb3NhaWMSEGUtcTNPalpQcWJMQlBmbk0YADABOAAYByCa1dDZAjACSggQAhgCIAIoAg */
