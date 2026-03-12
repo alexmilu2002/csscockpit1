@@ -1,25 +1,21 @@
-* { 
-  box-sizing: border-box; 
-}
 
 html, body { 
   margin: 0; 
   height: 100%; 
   background: black; 
   color: white; 
- }
+}
 
+/* COCKPIT SVG */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
   background-image: url("./images/cockpit.svg");
-  position: fixed;
   background-size: cover;
   background-position: center;
-  z-index: 0;
+  z-index: 1;
 }
-
 
 main {
   height: 100%;
@@ -27,113 +23,207 @@ main {
   overflow: hidden;
 }
 
-/* SPACE */
+/* RUIMTE */
 section {
-  /* inset: 0; */
   overflow: hidden;
   height:100%;
 
-  perspective:100em;
+  perspective: 200em;
   transform-style:preserve-3d;
 
   display:grid;
 }
 
-/* STERREN LAAGJES */
+/* STERREN */
 section > div {
   grid-area:1/1;
   height:100%;
-
   background:
     radial-gradient(2px 2px at 20px 30px, white, transparent),
     radial-gradient(2px 2px at 80px 120px, white, transparent),
     radial-gradient(2px 2px at 150px 60px, white, transparent);
   background-size: 200px 200px;
-  animation: zoom calc(7s * var(--throttle, .9)) linear infinite;
+
+  animation: zoom calc(3.39s * var(--throttle, .9)) linear infinite;
 }
 
 /* DIEPTE */
-section > div:nth-child(2) {
-  animation-delay: -3.17s;
-  animation-duration: calc(3.23s * var(--throttle, .9));
+section > div:nth-child(2){
+  animation-delay:-1.29s;
+  animation-duration:calc(3.23s * var(--throttle, .9));
+  rotate:13deg;
 }
 
-section > div:nth-child(3) {
-
-  animation-delay: -7.79s;
-  animation-duration: calc(5.49s * var(--throttle, .9));
+section > div:nth-child(3){
+  animation-delay:-3.17s;
+  animation-duration:calc(3.79s * var(--throttle, .9));
+  rotate:193deg;
 }
 
-section > div:nth-child(4) {
-
-  animation-delay: -5.79s;
-  animation-duration: calc(7.89s * var(--throttle, .9));
+section > div:nth-child(4){
+  animation-delay:-5.79s;
+  animation-duration:calc(3.01s * var(--throttle, .9));
+  rotate:59deg;
 }
 
-section > div:nth-child(5) {
-
-  animation-delay: -1.79s;
-  animation-duration: calc(9.43s * var(--throttle, .9));
+section > div:nth-child(5){
+  animation-delay:-7.57s;
+  animation-duration:calc(3.57s * var(--throttle, .9));
+  rotate:239deg;
 }
 
-section > div:nth-child(6) {
-
-  animation-delay: -9.79s;
-  animation-duration: calc(11.73s * var(--throttle, .9));
+section > div:nth-child(6){
+  animation-delay:-9.79s;
+  animation-duration:calc(4.13s * var(--throttle, .9));
+  rotate:37deg;
 }
 
-section > div:nth-child(7) {
-
-  animation-delay: -11.39s;
-  animation-duration: calc(13.27s * var(--throttle, .9));
+section > div:nth-child(7){
+  animation-delay:-11.39s;
+  animation-duration:calc(2.79s * var(--throttle, .9));
+  rotate:157deg;
 }
 
-
-@keyframes zoom {
-  from { transform: translateZ(-20em); }
-  to { transform: translateZ(150em); }
+@keyframes zoom{
+  from{ transform: translateZ(0em); }
+  to{ transform: translateZ(150em); }
 }
-
-/* RONDJE */
-/* main::after {
-  content: "";
-  position: absolute;
-  bottom: -150px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle at 50% 40%, #444, #111 70%);
-  border-radius: 50%;
-} */
 
 /* CONTROL PANEL */
-form {
-  position: absolute;
-  bottom: 30px;
+
+form{
+  position:absolute;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
+
+  max-width:clamp(350px,60%,700px);
+  height:300px;
+
+  background:rgba(0,0,0,0.6);
+  border-radius:20px;
+
+  display:flex;
+  align-items:center;      /* verticale centrering */
+  justify-content:center;  /* horizontale centrering */
+  gap:6em;
+
+  z-index:2;
+  border:1px solid rgba(255,255,255,0.5);
+}
+
+/* SLIDER */
+
+input[type="range"]{
+  -webkit-appearance:none;
+  appearance:none;
+  background:transparent;
+  cursor:pointer;
+  width:6.5rem;
+  rotate:90deg;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+  background-color:#808080;
+  height:2rem;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  appearance:none;
+
+  margin-top:-8px;
+
+  background-color:#add8e6;
+
+  height:3rem;
+  width:1.5rem;
+
+  border-radius:0.5rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb{
+  outline:3px solid #add8e6;
+  outline-offset:0.125rem;
+}
+
+/* START KNOP */
+
+body:has(input[type=checkbox]:not(:checked)) section > div{
+  animation-play-state:paused;
+}
+
+label{
+  width:200px;
+  height:200px;
+  position:relative;
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+label:first-of-type input{
+  display:none;
+}
+
+/* DEKSEL */
+
+label > div{
+  position:absolute;
+  top:30%;
+  left:50%;
+  transform:translate(-50%,0);
+
+  width:5rem;
+  height:5rem;
+
+  background:rgba(180,180,180,0.3);
+  border-radius:5%;
+
+  z-index:3;
+
+  box-shadow:
+  8px 8px 5px rgba(0,0,0,0.3),
+  0px 5px 6px 4px rgba(29,50,90,0.3),
+  inset 5px -5px 0px 5px rgba(200,200,200,0.15),
+  inset -2px -2px 0px 5px rgba(195,195,195,0.15);
+}
+
+/* KNOP */
+
+label span{
+  position:absolute;
+
+  top: 35%;
   left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0,0,0,0.6);
-  padding: 20px 30px;
-  border-radius: 20px;
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  z-index: 1;
-  border: 1px solid rgba(255,255,255,0.2);
+  transform:translateX(-50%);
+
+  width:3rem;
+  height:3rem;
+
+  background:red;
+  border-radius:100%;
+
+  box-shadow:0 7px 0 #500000;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:white;
+  font-weight:bold;
+  font-size:0.7em;
+
+  transition:0.15s;
 }
 
-input[type=range] {
-  width: 150px;
+label span::before{
+  content:"START";
 }
 
-input[type=checkbox] {
-  width: 20px;
-  height: 20px;
+label input:checked ~ span{
+  transform:translate(-50%,8px);
+  box-shadow:0 2px 0 #500000;
 }
-
-/* START / STOP */
-body:has(input[type=checkbox]:not(:checked)) section > div {
-  animation-play-state: paused;
-}
-

@@ -1,15 +1,3 @@
-// const ranges = document.querySelectorAll('[type="range"]')
-
-
-// ranges.forEach( range => {
-//     console.log("h1")
-
-//     range.addEventListener("change", () => {
-        
-//         document.documentElement.style.setProperty(`--${range.name}`, range.value);
-//     })
-// })
-
 const ranges = document.querySelectorAll('[type="range"]');
 
 const updateRange = range => {
@@ -29,4 +17,11 @@ ranges.forEach(range => {
 	range.oninput = () => {
 		updateRange(range)
 	};
+});
+
+const deksel = document.querySelector("label > div");
+
+deksel.addEventListener("click", function(e){
+  e.preventDefault();
+  deksel.style.transform = "translate(30%, 0%) rotateY(75deg)";
 });
