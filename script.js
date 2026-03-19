@@ -18,10 +18,3 @@ ranges.forEach(range => {
 		updateRange(range)
 	};
 });
-
-// const deksel = document.querySelector("label > div");
-
-// deksel.addEventListener("click", function(e){
-//   e.preventDefault();
-//   deksel.style.transform = "translate(30%, 0%) rotateY(75deg)";
-// });
