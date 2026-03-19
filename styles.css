@@ -248,6 +248,7 @@ body:has(form:last-of-type label:last-of-type input:checked) section:last-of-typ
   opacity: 1;
 }
 
+
 body:has(input[value="rood"]:checked) {
   section > div { --star-color: red; }
   main > form:last-of-type {
