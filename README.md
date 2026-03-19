@@ -102,16 +102,19 @@
 <h1>Dag 7 (18/03/2025) Woensdag</h1>
 
 <h2>Wat heb ik gedaan vandaag?</h2>
-<p>Lettertype, Nesting, Verschillende thema,   </p>
+<p>Vanmorgen begon ik even met een besef momentje dat ik nog even moet bikkelen. Doordat ik 2 dagen heb verspild aan de klepje, heb ik besloten om dat voor nu even achterwegen te laten en door te gaan. Natuurlijk was ik eenbeetje teleurgesteld dat het mij niet is gelukt om alleen met html en css te doen. Maar ik ben nogsteeds trots op mezelf dat ik het heb geprobeerd, en uiteindelijk heb ik toch best wel veel erover geleerd. Net als hoe ik de klep moet positioneren, en hoe ik hem een transitie moet geven om dat openklap look-and-feel te geven. Ik besloot om vandaag aan de slag te gaan met de Lettertype. Ik dacht even na over wat voor lettertype zou passen bij een ruimteschip. Na even nagedacht te hebben vond ik het een leuk idee om de nasa lettertype te gebruiken, omdat het een best iconisch en herkenbare lettertype is. Omdat ik mijn dashboard in de stijl van neon en futuristisch heb gemaakt had ik ook het idee om een Neon Sign animatie te maken voor mijn lettertype. Ook ben ik bezig geweest met mijn tweede stijl. Ik heb een form met radio buttons gemaakt waarbij ik een optie de normale is en de andere rood. Bij de rode optie wil ik dat de sterren rood worden in plaats van wit en dat de dashboard ook rood wordt in plaats van blauw. Ten slotte ben ik bezig geweest met CSS Nesting. Ik heb een artikel op MDN bestudeerd die hierover ging. En hieruit leerde ik dat je normale css nesting hebt en ook scss nesting.</p>
 
 <h2>Hoelang heb ik eraan gewerkt?</h2>
-<p> </p>
+<p>Lettertype: 3uur</p>
+<p>Stijl: 2 uur</p>
+<p>Nesting 1 uur</p>
+<p>Check-Out: 1 uur</p>
 
 <h2>Wat heb ik geleerd?<h2>
-<p> </p>
+<p></p>
 
 <h2>Wat ga ik morgen doen?</h2>
-<p> </p>
+<p>Panic Animatie</p>
 
 
 <h2>Bronnen</h2>

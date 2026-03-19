@@ -40,9 +40,8 @@ main {
   height: 100%;
   position: relative;
   overflow: hidden;
-}
 
-main > form {
+  > form {
   position: absolute;
   left: 0;
   right: 0;
@@ -50,9 +49,10 @@ main > form {
   align-items: center;
   justify-content: center;
   z-index: 2;
+
 }
 
-main > form:first-of-type {
+  > form:first-of-type {
   top: 0;
   display: flex;
   gap: 2em;
@@ -60,7 +60,7 @@ main > form:first-of-type {
   margin: 0 auto;
 }
 
-main > form:last-of-type {
+  > form:last-of-type {
   bottom: 0;
   max-width: clamp(350px, 60%, 825px);
   height: clamp(280px, 40%, 325px);
@@ -77,6 +77,8 @@ main > form:last-of-type {
   container-type: inline-size;
   container-name: cockpit;
 }
+}
+
 
 /* Container Querie */
 
@@ -129,9 +131,8 @@ section:last-of-type {
   inset: 0;
   z-index: 999;
   pointer-events: none;
-}
 
-section:last-of-type > div {
+  > div {
   width: 500vw;
   height: 500vh;
   z-index: 999;
@@ -141,6 +142,9 @@ section:last-of-type > div {
   animation: straal 1s linear infinite;
   animation-play-state: paused;
 }
+}
+
+
 
 /* Animaties */
 
@@ -154,17 +158,18 @@ section:last-of-type > div {
     filter:
       drop-shadow(0px 0px 1px #fff)
       drop-shadow(0px 0px 1px #fff)
-      drop-shadow(0px 0px 3px #ee8080)
-      drop-shadow(0px 0px 10px #ff4d4d)
-      drop-shadow(0px 0px 20px #FC3D21);
+      drop-shadow(0px 0px 2px #ee8080)
+      drop-shadow(0px 0px 6px #ff4d4d)
+      drop-shadow(0px 0px 10px #FC3D21);
   }
+
   100% {
     filter:
-      drop-shadow(0px 0px 3px #fff)
-      drop-shadow(0px 0px 3px #fff)
-      drop-shadow(0px 0px 5px #ee8080)
-      drop-shadow(0px 0px 15px #ff4d4d)
-      drop-shadow(0px 0px 25px #FC3D21);
+      drop-shadow(0px 0px 1px #fff)
+      drop-shadow(0px 0px 2px #fff)
+      drop-shadow(0px 0px 3px #ee8080)
+      drop-shadow(0px 0px 10px #ff4d4d)
+      drop-shadow(0px 0px 15px #FC3D21);
   }
 }
 
@@ -182,9 +187,10 @@ main > form:last-of-type label {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
-main > form:last-of-type label span {
+form:last-of-type label span {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -201,31 +207,31 @@ main > form:last-of-type label span {
   transition: 0.15s;
 }
 
-main > form:last-of-type label:first-of-type span {
+form:last-of-type label:first-of-type span {
   background: blue;
   box-shadow: 0 7px 0 darkblue;
 }
 
-main > form:last-of-type label:first-of-type span::before {
+form:last-of-type label:first-of-type span::before {
   content: "START";
 }
 
-main > form:last-of-type label:last-of-type span {
+form:last-of-type label:last-of-type span {
   background: red;
   box-shadow: 0 7px 0 #500000;
 }
 
-main > form:last-of-type label:last-of-type span::before {
+form:last-of-type label:last-of-type span::before {
   content: "PANIC";
 }
 
-main > form:last-of-type label input:checked ~ span { 
+form:last-of-type label input:checked ~ span { 
   transform: translate(-50%, 8px); 
   box-shadow: 0 2px 0 black; 
 }
 
 /* Slider */
-main > form:last-of-type input[type="range"] {
+form:last-of-type input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   background: transparent;
@@ -233,14 +239,14 @@ main > form:last-of-type input[type="range"] {
   width: 200px;
 }
 
-main > form:last-of-type input[type="range"]::-webkit-slider-runnable-track {
+form:last-of-type input[type="range"]::-webkit-slider-runnable-track {
   background-color: #898e90;
   border-radius: 15px;
   height: 40px;
   rotate: 90deg;
 }
 
-main > form:last-of-type input[type="range"]::-webkit-slider-thumb {
+form:last-of-type input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   margin-top: -7.5px; 
