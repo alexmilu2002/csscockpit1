@@ -18,3 +18,4 @@ ranges.forEach(range => {
 		updateRange(range)
 	};
 });
+
