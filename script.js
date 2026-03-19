@@ -19,9 +19,9 @@ ranges.forEach(range => {
 	};
 });
 
-const deksel = document.querySelector("label > div");
+// const deksel = document.querySelector("label > div");
 
-deksel.addEventListener("click", function(e){
-  e.preventDefault();
-  deksel.style.transform = "translate(30%, 0%) rotateY(75deg)";
-});
+// deksel.addEventListener("click", function(e){
+//   e.preventDefault();
+//   deksel.style.transform = "translate(30%, 0%) rotateY(75deg)";
+// });

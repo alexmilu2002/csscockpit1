@@ -99,10 +99,27 @@
 <h2>Wat ga ik morgen doen?</h2>
 <p> </p>
 
+<h1>Dag 7 (18/03/2025) Woensdag</h1>
+
+<h2>Wat heb ik gedaan vandaag?</h2>
+<p>Lettertype, Nesting, Verschillende thema,   </p>
+
+<h2>Hoelang heb ik eraan gewerkt?</h2>
+<p> </p>
+
+<h2>Wat heb ik geleerd?<h2>
+<p> </p>
+
+<h2>Wat ga ik morgen doen?</h2>
+<p> </p>
+
 
 <h2>Bronnen</h2>
-<p>https://www.google.com/search?q=spaceship+cockpit+transparent+background&sca_esv=d93e5f3f55d68fd9&udm=2&biw=1920&bih=945&sxsrf=ANbL-n51w0qFPlt7sIPtdpcA9HZ8dLoixg%3A1772708805723&ei=xWOpabbzK6KK-d8PtKiYgAk&ved=0ahUKEwj26Z71zoiTAxUiRf4FHTQUBpAQ4dUDCBI&uact=5&oq=spaceship+cockpit+transparent+background&gs_lp=Egtnd3Mtd2l6LWltZyIoc3BhY2VzaGlwIGNvY2twaXQgdHJhbnNwYXJlbnQgYmFja2dyb3VuZEjmElCYBlibEXABeACQAQCYATqgAewCqgEBOLgBA8gBAPgBAZgCAqACMcICBhAAGAcYHsICBRAAGIAEwgIEEAAYHsICBhAAGAgYHsICCBAAGAcYCBgewgIIEAAYBRgHGB6YAwCIBgGSBwEyoAf3BbIHATG4By3CBwUwLjEuMcgHBYAIAA&sclient=gws-wiz-img#sv=CAMSWBoyKhBlLXEzT2paUHFiTEJQZm5NMg5xM09qWlBxYkxCUGZuTToOZWZOVUJEV2RuazZISk0gBCocCgZtb3NhaWMSEGUtcTNPalpQcWJMQlBmbk0YADABOAAYByCa1dDZAjACSggQAhgCIAIoAg</p>
+<p>https://forums.scifi-meshes.com/discussion/77919/wings-of-saint-nazaire-game-art-large-images/p3</p>
 
 <p>https://redstapler.co/chernobyl-az-5-button-css-html/</p>
 
+<p>https://prismic.io/blog/css-text-animations#4-matrix</p>
+
+<p>https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Nesting</p>
 
