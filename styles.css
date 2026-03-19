@@ -1,11 +1,6 @@
-
 @font-face {
   font-family: Nasalization;
   src: url(fonts/Nasalization\ Rg.otf);
-}
-
-* {
-  box-sizing: border-box;
 }
 
 html, body {
@@ -49,9 +44,9 @@ main {
   align-items: center;
   justify-content: center;
   z-index: 2;
-
 }
 
+/* Style Knoppen */
   > form:first-of-type {
   top: 0;
   display: flex;
@@ -60,6 +55,7 @@ main {
   margin: 0 auto;
 }
 
+/* Dashboard */
   > form:last-of-type {
   bottom: 0;
   max-width: clamp(350px, 60%, 825px);
@@ -79,9 +75,7 @@ main {
 }
 }
 
-
 /* Container Querie */
-
 @container cockpit (max-width: 600px) {
   h1 {
     top: 20px;
@@ -144,10 +138,7 @@ section:last-of-type {
 }
 }
 
-
-
 /* Animaties */
-
 @keyframes zoom { 
   from { transform: translateZ(0em); } 
   to { transform: translateZ(150em); } 
@@ -205,6 +196,7 @@ form:last-of-type label span {
   font-weight: bold;
   font-size: 1em;
   transition: 0.15s;
+  
 }
 
 form:last-of-type label:first-of-type span {

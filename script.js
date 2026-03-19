@@ -1,3 +1,4 @@
+// Stukje JS die je van Sanne mocht gebruiken voor de Range
 const ranges = document.querySelectorAll('[type="range"]');
 
 const updateRange = range => {
