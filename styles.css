@@ -32,8 +32,7 @@ main {
     z-index: 2;
   }
 
-  /* RADIO BUTTONS INSIDE COCKPIT */
-  /* RADIO CONTROLS */
+  /* Radio Buttons */
 > form:first-of-type {
   position: absolute;
   bottom: 30px;
@@ -248,26 +247,24 @@ h1 {
     width: 100px;
   }
 
-  /* Shrink button labels */
   main > form:last-of-type label {
     width: 75px;
     height: 75px;
   }
 
-  /* Shrink the round START/PANIC buttons */
+  /* START/PANIC buttons */
   form:last-of-type label span {
     width: 3.5rem;
     height: 3.5rem;
     font-size: 0.75em;
   }
 
-  /* Throttle housing scales down too */
+  /* Throttle */
   main > form:last-of-type label:has(input[type="range"]) {
     width: 60px;
     height: 145px;
   }
 
-  /* Shrink the slider */
   form:last-of-type input[type="range"] {
     width: 120px;
   }
