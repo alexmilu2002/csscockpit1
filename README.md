@@ -179,15 +179,23 @@
 <h3>Wat ga ik morgen doen?</h3>
 <p>Morgen ga ik het gesprek hebben.</p>
 
-<h2>Weekly Checkout 4</h2>
-<h3>Wat heb je deze week gedaan?</h3>
-<p>Komt na het Eindgesprek</p>
+<h2>Herkansing Check-Out</h2>
 
-<h3>Wat heb je deze week geleerd?</h3>
-<p>Komt na het Eindgesprek</p>
+<h3>Gekregen Feedback</h3>
+<p>Theme's in de Cockpit zetten</p>
+<p>Knoppen zijn net niet realistisch<p>
+<p>Kijk beter naar responsiveness</p>
+<p>De Cockpit is net geen cockpit!</p>
 
-<h3>Wat ga je volgende week doen?</h3>
-<p>Komt na het Eindgesprek</p>
+<h3>Wat heb je gedaan?</h3>
+<p>Ik was het eens met de feedback van Sanne, maar ik was nogsteeds trots op wat ik tot nu toe had gemaakt. Zo was ik al blij met de sterren animatie, en de panic animatie. Ik heb heb zo veel mogelijk feedback proberen op te nemen in mijn herkansing. Ik was begonnen met responsiveness. Eerst passte de controlpanel niet lekker in de cockpit, en zag het eruit alsof het gewoon erop was geplakt. Ik ben weer opnieuw aan de slag gegaan met de container queries. Nu is de cockpit responsive, en lijkt het niet alsof het maar erop is geplakt. Ook heb ik mijn oog voor detail vergroot! Zo heb ik nagedacht over het vastmaken van de controlpanel met schroefjes. 1 schroef staat zelf schuin, dat vond ik persoonlijk best grappig. Ook is mijn oog voor detail bij de buttons ook heel erg vergroot. Ik heb dit keer mijn best gedaan om elke button zo realistisch mogelijk te maken. Waar ik het meest trots op ben is denk ik de panic button. De panic button heeft een rondje eromheen in de thema van zo een hazard lint. Persoonlijk vond ik dat heel bijpassend omdat het een knop is die je alleen in moet drukken als er een noodgeval is. Ook ben ik trots op de Throttle. Nu heb ik aan de zijkanten Notches, wat zo een slider veel realistischer maakt. Elke button heeft nu een unieke uitstraling, en lijkt alsog je ze echt indrukt, of sleept. Zie hieronder in de plaatjes het verschil! Nu heb ik echt het besef gekregen wat het vak CSS inhoudt, en ik hoop dat het nu wel een voldoende is!</p>
+
+<h3>Wat heb je geleerd?</h3>
+<p>Ik heb geleerd dat CSS niet alleen is om je objecten zomaar neer te zetten, maar dat elk kleine detail ervoor zorgt dat je product veel leuker wordt. Voor dit opdracht had ik niet verwacht dat ik blij zou zijn dat een schroefje schuin staat. :> </p>
+
+<img src="./images/Before.png" alt="Screenshot van Before de Herkansing">
+<img src="./images/After.png" alt="Screenshot van After de Herkansing">
+
 
 <h2>Bronnen</h2>
 <p>https://forums.scifi-meshes.com/discussion/77919/wings-of-saint-nazaire-game-art-large-images/p3</p>
